@@ -1,25 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Penpot plugin example</title>
-  </head>
-  <body>
-    <p>Penpot plugin starter template</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Penpot Design Challenge Plugin</title>
+    </head>
+    <body>
+        <main>
+            <section class="preview">
+                <h1>
+                    Design
+                    <span id="prompt-design" class="prompt">a TOS page</span>
+                </h1>
+                <h1>
+                    for
+                    <span id="prompt-for" class="prompt"
+                        >a food delivery robot</span
+                    >
+                </h1>
+            </section>
 
-    <p>
-      Checkout the
-      <a target="_blank" href="https://help.penpot.app/plugins/"
-        >documentation</a
-      >
-      to get started.
-    </p>
+            <button
+                type="button"
+                data-appearance="primary"
+                data-handler="generate"
+            >
+                New Prompt
+            </button>
 
-    <button type="button" data-appearance="primary" data-handler="create-text">
-      Create text
-    </button>
+            <label>
+                Inpired by
+                <a target="_blank" href="https://sharpen.design/"
+                    >sharpen.design</a
+                >
+            </label>
+        </main>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>

@@ -1,15 +1,23 @@
-penpot.ui.open("Penpot plugin starter template", `?theme=${penpot.theme}`);
+penpot.ui.open("Design Challenge Generator", `?theme=${penpot.theme}`, {
+  width: 280,
+  height: 320,
+});
+
+import prompt_design from "../public/challenge-design.json";
+import prompt_for from "../public/challenge-for.json";
 
 penpot.ui.onMessage<string>((message) => {
-  if (message === "create-text") {
-    const text = penpot.createText("Hello world!");
+  if (message === "generate") {
+    const c_design =
+      prompt_design[Math.floor(Math.random() * prompt_design.length)];
 
-    if (text) {
-      text.x = penpot.viewport.center.x;
-      text.y = penpot.viewport.center.y;
+    const c_for = prompt_for[Math.floor(Math.random() * prompt_for.length)];
 
-      penpot.selection = [text];
-    }
+    penpot.ui.sendMessage({
+      message: "return",
+      challenge: c_design,
+      for: c_for,
+    });
   }
 });
 

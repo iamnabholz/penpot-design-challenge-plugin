@@ -1,6 +1,7 @@
 {
-  "name": "Penpot starter plugin",
+  "name": "Design Challenge Generator",
   "code": "plugin.js",
-  "description": "This is a starter plugin for Penpot",
+  "icon": "content/icon.png",
+  "description": "Generate open-ended design prompts",
   "permissions": ["content:read", "content:write"]
 }
