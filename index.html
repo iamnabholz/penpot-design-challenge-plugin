@@ -1,41 +1,39 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Penpot Design Challenge Plugin</title>
-    </head>
-    <body>
-        <main>
-            <section class="preview">
-                <h1>
-                    Design
-                    <span id="prompt-design" class="prompt">a TOS page</span>
-                </h1>
-                <h1>
-                    for
-                    <span id="prompt-for" class="prompt"
-                        >a food delivery robot</span
-                    >
-                </h1>
-            </section>
 
-            <button
-                type="button"
-                data-appearance="primary"
-                data-handler="generate"
-            >
-                New Prompt
-            </button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penpot Design Challenge Plugin</title>
+</head>
 
-            <label>
-                Inpired by
-                <a target="_blank" href="https://sharpen.design/"
-                    >sharpen.design</a
-                >
-            </label>
-        </main>
+<body>
+    <main>
+        <section class="preview">
+            <h1>
+                Design
+                <span id="prompt-design" class="prompt">a TOS page</span>
+            </h1>
+            <h1>
+                for
+                <span id="prompt-for" class="prompt">a food delivery robot</span>
+            </h1>
+        </section>
 
-        <script type="module" src="/src/main.ts"></script>
-    </body>
+        <button type="button" data-appearance="primary" data-handler="generate">
+            New Prompt
+        </button>
+
+        <label style="line-height: 0.7">
+            Inpired by
+            <a target="_blank" href="https://sharpen.design/">sharpen.design</a>
+            <br />
+            <br />
+            10.000+ posible prompts (WIP)
+        </label>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
